@@ -1,7 +1,7 @@
 # ChatBox
 For chat with other peaple
 
-#setup client
+# setup client
 
 requested library
 PyQt5, sys, socket, hashlib
@@ -12,7 +12,7 @@ You need to put all of clients file in the same folder
 start up your client
 for start-up your application you need to execute the client.py file
 
-#setup server
+# setup server
 
 requested library
 socket, multiprocessing, mysql.connector
