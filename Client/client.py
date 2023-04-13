@@ -1,11 +1,9 @@
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import QObject, pyqtSignal, QThread
+from PyQt5.QtCore import pyqtSignal, QThread
 from PyQt5 import uic, QtWidgets
 import sys
 import socket
 import hashlib
-import time
-import select
 
 special_charapter = ['!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~']
 HOST = ''
