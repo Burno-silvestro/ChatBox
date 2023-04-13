@@ -64,7 +64,7 @@ class loginWIN(QMainWindow):
         self.password.setEchoMode(QLineEdit.Password)
         self.btn_login.clicked.connect(self.login)
         self.btn_create.clicked.connect(self.create)
-        self.ipaddr.setText('192.168.178.28')
+        self.ipaddr.setText('127.0.0.1')
 
 
     def login(self):
