@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>393</width>
+    <height>246</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">padding-left: 15px;
+padding-right: 15px;
+background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>87</y>
+      <width>371</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border-radius: 12px;
+	min-height: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+QLineEdit:focus{
+	border: 2px solid rgb(145, 30, 180);
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_login">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 12px;
+    height: 25px;
+	background-color: rgb(145, 30, 180);
+	color: rgb(114, 20, 31);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(100, 21, 125);
+}</string>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_create">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 12px;
+	border: 1px solid white;
+    height: 25px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 20, 20);
+	border: 2px solid rgb(70, 70, 70);
+}</string>
+    </property>
+    <property name="text">
+     <string>CREATE ACCOUNT</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>118</y>
+      <width>371</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border-radius: 12px;
+	min-height: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+QLineEdit:focus{
+	border: 2px solid rgb(145, 30, 180);}</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText</set>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>50</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Umpush&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Login to ChatBox</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="stay_connected">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>180</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+gridline-color: rgb(255, 255, 255);
+font: 8pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>STAY CONNECTED</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ipaddr">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>150</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border-radius: 12px;
+	min-height: 25px;
+	padding-left: 15px;
+}
+QLineEdit:focus{
+	border: 2px solid rgb(38, 162, 105);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>IP Server</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>-20</y>
+      <width>191</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Umpush&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>username</zorder>
+   <zorder>btn_login</zorder>
+   <zorder>btn_create</zorder>
+   <zorder>password</zorder>
+   <zorder>stay_connected</zorder>
+   <zorder>ipaddr</zorder>
+   <zorder>label</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>393</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
